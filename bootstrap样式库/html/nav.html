@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../carryQueryUI/carreyQueryNav.css" /> -->
+    <link rel="stylesheet" href="../carryQueryUI/carryQuery.css">
+    <style>
+      * {
+        /* 
+          边框盒子  我们开发的标准
+          widht = content + border-width-left/right + padiding-left/right
+          height = content + border-width-top/bottom + padding-top/bottom
+          
+          内容盒子  谷歌  IE  7 8 9 10 11 火狐
+          盒子宽度 = width + border-width-left/right + padiding-left/right
+          盒子高度  = width + border-width-top/bottom + padding-top/bottom
+          在内容盒子中 content = width * height
+          */
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+      }
+      ul,
+      li {
+        margin: 0;
+      }
+
+      .box {
+        width: 20rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      .nav 基础类的导航
+    </h2>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">导航1</a></li>
+        <li class="active"><a href="#">导航2</a></li>
+        <li><a href="#">导航3</a></li>
+        <li><a href="#">导航4</a></li>
+        <li><a href="#">导航5</a></li>
+      </ul>
+    </nav>
+    <h2>
+      .nav-tab 表示tab切换样式的导航
+    </h2>
+    <p>
+      这是一个选中后导游悬浮效果的tab 样式
+    </p>
+    <nav class="nav nav-tab">
+      <ul>
+        <li><a href="#">导航1</a></li>
+        <li class="active"><a href="#">导航2</a></li>
+        <li><a href="#">导航3</a></li>
+        <li><a href="#">导航4</a></li>
+        <li><a href="#">导航5</a></li>
+      </ul>
+    </nav>
+    <h2>
+      .nav-pills 胶囊样式导航
+    </h2>
+    <p>
+      胶囊样式导航经常应用在，页面简洁大方项目中。主要使用颜色 #409eff
+      盒子用阴影效果；有立体感
+    </p>
+    <nav class="nav nav-pills">
+      <ul>
+        <li><a href="#">导航1</a></li>
+        <li class="active"><a href="#">导航2</a></li>
+        <li><a href="#">导航3</a></li>
+        <li><a href="#">导航4</a></li>
+        <li><a href="#">导航5</a></li>
+      </ul>
+    </nav>
+    <h2>
+      .nav-stacked 侧边栏导航
+    </h2>
+    <p>
+      侧边栏默认宽度为100% 如果想要宽度小一小点；请您自定义 添加父容器，并 通过
+      宽度 位置属性实现您想要的效果
+    </p>
+    <div style="width: 20rem;">
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#">导航1</a></li>
+        <li class="active"><a href="#">导航2</a></li>
+        <li><a href="#">导航3</a></li>
+        <li><a href="#">导航4</a></li>
+        <li><a href="#">导航5</a></li>
+      </ul>
+    </div>
+
+    <nav class="nav nav-inverse">
+      <ul>
+        <li><a href="#">导航1</a></li>
+        <li class="active"><a href="#">导航2</a></li>
+        <li><a href="#">导航3</a></li>
+        <li><a href="#">导航4</a></li>
+        <li><a href="#">导航5</a></li>
+      </ul>
+    </nav>
+    <div class="box">
+      <nav class="nav nav-inverse-gray">
+        <ul>
+          <li><a href="#">导航1</a></li>
+          <li class="active"><a href="#">导航2</a></li>
+          <li><a href="#">导航3</a></li>
+          <li><a href="#">导航4</a></li>
+          <li><a href="#">导航5</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav class="nav nav-inverse-black">
+      <ul>
+        <li><a href="#">导航1</a></li>
+        <li class="active"><a href="#">导航2</a></li>
+        <li><a href="#">导航3</a></li>
+        <li><a href="#">导航4</a></li>
+        <li><a href="#">导航5</a></li>
+      </ul>
+    </nav>
+
+    <div class="box">
+      <nav class="nav nav-inverse-stacked">
+        <ul>
+          <li><a href="#">导航1</a></li>
+          <li class="active"><a href="#">导航2</a></li>
+          <li><a href="#">导航3</a></li>
+          <li><a href="#">导航4</a></li>
+          <li><a href="#">导航5</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

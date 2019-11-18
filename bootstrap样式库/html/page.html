@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../carryQueryUI/carreryQueryPage.css"> -->
+    <link rel="stylesheet" href="../carryQueryUI/carryQuery.css">
+</head>
+<body>
+    
+    <h2>
+        .Page 表示分页
+    </h2>
+    <h3>
+        .pagination 是分页的基础样式；其他所有不同的分页都在.pagination 基础上完成
+    </h3>
+    <nav class="Page">
+        <ul class="pagination">
+            <li class="pre">
+                <a ref="#">&laquo;</a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li class="next">
+                <a href="#">&raquo;</a>
+            </li>
+        </ul>
+    </nav>
+    <h2>
+        .pagination-bgc 表示带有背景颜色的分页
+        .active  表示被选中后的样式；在.pagination-bgc 基础上
+    </h2>
+    <nav class="Page">
+        <ul class="pagination pagination-bgc">
+            <li class="pre">
+                <a href="#">&laquo;</a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li class="next">
+                <a href="#">&raquo;</a>
+            </li>
+        </ul>
+    </nav>
+    <h3>
+        .pagination-noBgc 表示没有边框；没有背景色的分页
+        .active  是被选中的样式；在.pagination-noBgc 基础上的样式
+    </h3>
+    <nav class="Page">
+        <ul class="pagination pagination-noBgc">
+            <li class="pre">
+                <a href="#">&laquo;</a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li class="next">
+                <a href="#">&raquo;</a>
+            </li>
+        </ul>
+    </nav>
+    <h3>
+        .pagination-inverse 表示背景色为黑色的分页
+        .active  被选中后 背景色为存黑色；字体为白色在 .pagination-inverse 基础上
+    </h3>
+    <nav class="Page">
+        <ul class="pagination pagination-inverse">
+            <li class="pre">
+                <a href="#">&laquo;</a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li class="next">
+                <a href="#">&raquo;</a>
+            </li>
+        </ul>
+    </nav>
+    <h3>
+        .pagination-inverse-lg 表示黑色的大分页 字体变大16px  内边距放大二倍
+    </h3>
+    <nav class="Page">
+        <ul class="pagination pagination-inverse-lg">
+            <li class="pre">
+                <a href="#">&laquo;</a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li class="next">
+                <a href="#">&raquo;</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

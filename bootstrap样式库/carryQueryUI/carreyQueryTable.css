@@ -1,0 +1,233 @@
+/* 表格样式 */
+/* 清空表格默认样式 */
+table {
+  background-color: transparent;
+  /* 表格塌陷 */
+  border-collapse: collapse;
+  border: 0px;
+}
+th {
+  font-weight: bold;
+  color: #909399;
+}
+.table {
+  width: 100%;
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+.table td {
+  border: 1px solid #e0e0e0;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  color: #606263;
+  padding: 10px 0 10px 15px;
+}
+.table > thead > tr > th {
+  text-align: left;
+  font-weight: 600;
+  color: #606263;
+  padding: 10px 0 10px 15px;
+}
+.table-column > tbody > tr > td {
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+}
+.table-column > tbody > tr > td:first-child {
+  border-left: 1px solid transparent;
+}
+.table-column > tbody > tr > td:last-child {
+  border-right: 1px solid transparent;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #fafafa;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+.table-striped > tbody > tr > td {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+.table-hover > tbody > tr:hover > td {
+  /* background-color: #f5f7fa !important; */
+  /* background-color: #000; */
+  /* color: #fff; */
+  background-color: #ccc !important;
+  border-bottom: 1px solid #ccc !important;
+  color: #fff !important;
+}
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > td,
+.table-condensed > tbody > tr > th {
+  padding: 5px;
+}
+.table > thead > tr > td.warning,
+.table > tbody > tr > td.warning,
+.table > tfoot > tr > td.warning,
+.table > thead > tr > th.warning,
+.table > tbody > tr > th.warning,
+.table > tfoot > tr > th.warning,
+.table > thead > tr.warning > td,
+.table > tbody > tr.warning > td,
+.table > tfoot > tr.warning > td,
+.table > thead > tr.warning > th,
+.table > tbody > tr.warning > th,
+.table > tfoot > tr.warning > th {
+  background-color: #f56c6c;
+  color: #f3e1e1;
+  border-bottom: 1px solid #f56c6c;
+}
+.table > thead > tr > th.info,
+.table > tbody > tr > th.info,
+.table > tfoot > tr > th.info,
+.table > thead > tr.info > td,
+.table > tbody > tr.info > td,
+.table > tfoot > tr.info > td,
+.table > thead > tr.info > th,
+.table > tbody > tr.info > th,
+.table > tfoot > tr.info > th {
+  background-color: #01aaed;
+  color: #d7e5f5;
+  border-bottom: 1px solid #01aaed;
+}
+.table > thead > tr > th.success,
+.table > tbody > tr > th.success,
+.table > tfoot > tr > th.success,
+.table > thead > tr.success > td,
+.table > tbody > tr.success > td,
+.table > tfoot > tr.success > td,
+.table > thead > tr.success > th,
+.table > tbody > tr.success > th,
+.table > tfoot > tr.success > th {
+  background-color: #8bc220;
+  color: #d4f5e2;
+  border-bottom: 1px solid #8bc220;
+}
+.table > thead > tr > th.danger,
+.table > tbody > tr > th.danger,
+.table > tfoot > tr > th.danger,
+.table > thead > tr.danger > td,
+.table > tbody > tr.danger > td,
+.table > tfoot > tr.danger > td,
+.table > thead > tr.danger > th,
+.table > tbody > tr.danger > th,
+.table > tfoot > tr.danger > th {
+  background-color: #ff1022;
+  color: #f7cdc7;
+  border-bottom: 1px solid #ff1022;
+}
+.table > thead > tr > th.primary,
+.table > tbody > tr > th.primary,
+.table > tfoot > tr > th.primary,
+.table > thead > tr.primary > td,
+.table > tbody > tr.primary > td,
+.table > tfoot > tr.primary > td,
+.table > thead > tr.primary > th,
+.table > tbody > tr.primary > th,
+.table > tfoot > tr.primary > th {
+  background-color: #ffb800;
+  color: #f7e8c0;
+  border-bottom: 1px solid #ffb800;
+}
+.table > thead > tr > th.warm,
+.table > tbody > tr > th.warm,
+.table > tfoot > tr > th.warm,
+.table > thead > tr.warm > td,
+.table > tbody > tr.warm > td,
+.table > tfoot > tr.warm > td,
+.table > thead > tr.warm > th,
+.table > tbody > tr.warm > th,
+.table > tfoot > tr.warm > th {
+  background-color: hsl(51, 93%, 54%);
+  border-bottom: 1px solid hsl(51, 93%, 54%);
+  color: #f7f8ac;
+}
+.table-border > tbody > tr > td,
+.table-border > thead > tr > th,
+.table-border > tfoot > tr > td {
+  border: 1px solid #e0e0e0;
+}
+
+/* 黑色表格 */
+.table-inverse {
+  background-color: #393d49;
+}
+.table-inverse > tbody > tr > td {
+  text-align: center;
+  color: #ccc;
+  border-bottom: 1px solid #333332;
+}
+.table-inverse > thead > tr > th,
+.table-inverse > tfoot > tr > td,
+.table-inverse > tbody > tr > th {
+  text-align: center;
+  color: #a6b1b1;
+  border-bottom: 2px solid #000;
+}
+.table-inverse > thead > tr > th:last-child,
+.table-inverse > tfoot > tr > td:last-child,
+.table-inverse > tbody > tr > th:last-child {
+  border-right: 1px solid #393d49;
+}
+
+.table-inverse-striped > tbody > tr:nth-of-type(odd) > td {
+  background-color: #303242;
+  border-bottom: 1px solid #393d49;
+  color: rgb(138, 140, 156);
+  text-align: center;
+}
+.table-inverse-striped > tbody > tr:nth-of-type(even) > td {
+  background-color: #393d49;
+  border-bottom: 1px solid #303242;
+  color: #ccc;
+  text-align: center;
+}
+.table-inverse-striped > thead > tr > th,
+.table-inverse-striped > tbody > tr > th {
+  background-color: #393d49;
+  border-bottom: 1px solid #303242;
+  color: #ccc;
+  font-weight: 900;
+  text-align: center;
+}
+
+.table-inverse-hover.table-inverse > tbody > tr:hover > td,
+.table-inverse-hover.table-inverse-striped > tbody > tr:hover > td {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 写兼容那个移动端的表格； */
+@media screen and (max-width: 768px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    /* overflow-style: autohiding-scrollbar; */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #e0e0e0;
+  }
+  .table-responsive {
+    /* 当到达移动端收；不让加大高度 */
+    min-height: 0.01%;
+    overflow-x: auto;
+  }
+}
+/* 实现横向滚动表格 */
+@media screen and (max-width: 768px) {
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+    width: 1%;
+    min-width: 1%;
+    white-space: nowrap;
+  }
+}
+
+
+/*
+ 没有做；等宽度选择器
+ 给 td 设置最小宽度
+*/

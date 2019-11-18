@@ -1,0 +1,185 @@
+/* 
+导航  不兼容移动端
+*/
+.nav {
+  display: block;
+  width: 100%;
+  /* 高度不可以受到限制 */
+}
+.nav,
+.nav > ul {
+  padding: 0px 10px;
+}
+.nav li {
+  list-style: none;
+  float: left;
+}
+/* 给祖籍元素 */
+.nav::after {
+  content: "";
+  display: block;
+  /* height: 0; */
+  clear: both;
+  visibility: hidden;
+  zoom: 1;
+}
+
+.nav li > a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  padding: 15px;
+}
+
+.nav-tab {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.nav-tab .active > a {
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  box-shadow: 1px 1px 15px 0px #ccc;
+  font-weight: bold;
+}
+.nav-tab li {
+  float: left;
+  position: relative;
+  top: 1px;
+}
+.nav-tab li > a:hover {
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  box-shadow: 1px 1px 15px 0px #ccc;
+  font-weight: bold;
+}
+.nav-pills .active > a {
+  background-color: #409eff;
+  color: #fff;
+}
+.nav-pills li > a:hover {
+  background-color: #409eff;
+  color: #fff;
+}
+.nav-pills {
+  box-shadow: 0px 2px 5px 0px #ccc;
+}
+.nav-stacked {
+  padding: 0px !important;
+}
+.nav-stacked li {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-stacked li > a {
+  width: 100%;
+  text-align: center;
+}
+
+/* 背景色为黑色的导航条 */
+.nav-inverse {
+  background-color: #545c64;
+}
+.nav-inverse .active > a {
+  color: #ffba21;
+  border-bottom: 2px solid #ffba21;
+}
+.nav-inverse li > a {
+  color: #ffffff;
+}
+.nav-inverse li > a:hover {
+  color: #ffba21;
+  border-bottom: 2px solid #ffba21;
+}
+
+/* 纵向 */
+.nav-inverse-stacked {
+  background-color: #272c2c;
+}
+.nav-inverse-stacked,
+.nav-inverse-stacked > ul {
+  padding: 0px !important;
+}
+.nav-inverse-stacked li {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-inverse-stacked li > a {
+  width: 100%;
+  color: #799fd8;
+}
+.nav-inverse-stacked li > a:hover {
+  color: #e9e3ec;
+ 
+  background-color: #545c64;
+}
+.nav-inverse-stacked .active > a {
+  color: #e9e3ec;
+  /* background-color: #272c2c; */
+  background-color: #545c64;
+}
+
+/* 背景色为黑色的 横向导航条 */
+.nav-inverse-black {
+    background-color: #272c2c;
+  } 
+  .nav-inverse-black .active > a {
+    color: #fff;
+
+    border-bottom: 2px solid #fff;
+  }
+  .nav-inverse-black li > a {
+    color: #799fd8;
+  }
+  .nav-inverse-black li > a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* 纵向 */
+.nav-inverse-gray {
+    background-color: #545c64;
+  }
+  .nav-inverse-gray,
+  .nav-inverse-gray > ul {
+    padding: 0px !important;
+  }
+  .nav-inverse-gray li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-inverse-gray li > a {
+    width: 100%;
+    color: #799fd8;
+  }
+  .nav-inverse-gray li > a:hover {
+    color: #e9e3ec;
+    background-color: rgb(46, 59, 71);
+  }
+  .nav-inverse-gray .active > a {
+    color: #e9e3ec;
+    background-color: rgb(46, 59, 71);
+  }
+  
+  /* 定位 */
+  .nav-fixed-top{
+      position: fixed;
+      top: 0;
+  }
+
+.nav-fixed-left{
+    position: fixed;
+    left: 0;
+}
+.nav-fixed-right{
+    position: fixed;
+    right: 0px;
+}
+
+.nav-fixed-right-15{
+    position: fixed;
+    right: 15px;
+}

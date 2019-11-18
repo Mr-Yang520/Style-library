@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../carryQueryUI/carryQuery.css" />
+    <!-- <link rel="stylesheet" href="../carryQueryUI/carryQueryForm.css " /> -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      html {
+        /* font-size: 12px; */
+      }
+ 
+
+      .box {
+        width: 65%;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        box-shadow: 5px 5px 5px 1px #ccc;
+        padding: 10px 130px 10px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="form-group">
+        <label class="form-label">活动名称</label>
+        <div class="">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">活动区域</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <button class="btn  btn-success form-control">提交</button>
+      </div>
+    </form>
+
+    <h2>.form-inline横向表单</h2>
+    <p>
+      这是一个横向的表单组件 样式都是通过 .form-inline>.form-group
+      这样方式实现的
+    </p>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="" class="form-label">用户名</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="" class="form-label">手机号码</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="checkbox">
+        <div class="circle-check"><input type="checkbox" /> 是</div>
+      </div>
+      <button class="btn btn-info">查询</button>
+    </form>
+
+    <h2>
+      .form-horizontal 是纵向表格
+    </h2>
+    <p>
+      这种是最长使用的表单；有选择框 单选 多选 日期等
+    </p>
+    <div class="box">
+      <form action="" class="form-horizontal">
+        <div class="form-group">
+          <label for="" class="form-label">用户：</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">活动信息</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">活动内容悬着</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="circle-check"><input type="checkbox" /> 是</div>
+        <div class="circle-check"><input type="checkbox" /> 否</div>
+        <div class="form-group" style="margin-top: 20px;">
+          <button class="btn btn-info">点击提交</button>
+        </div>
+      </form>
+    </div>
+
+    <h3>这是一个常用的组件；表单组件 里面有很多的控件</h3>
+    <div class="box">
+      <form action="" class="form-horizontal">
+        <div class="form-group">
+          <label for="" class="form-label">用户：</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">活动信息</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">活动内容悬着</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">即时配送</label>
+          <div class="form-check">
+            <input type="checkbox" class="switch switch-info" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="" class="form-label">活动内容</label>
+          <!-- ul.form-check>li.form-check-item*8>.square-check>input[type=checkbox]+span.check-content{选项$$} -->
+          <ul class="form-check">
+            <li class="form-check-item">
+              <div class="square-check">
+                <input type="checkbox" /><span class="check-content"
+                  >选项01</span
+                >
+              </div>
+            </li>
+            <li class="form-check-item">
+              <div class="square-check">
+                <input type="checkbox" /><span class="check-content"
+                  >选项02</span
+                >
+              </div>
+            </li>
+            <li class="form-check-item">
+              <div class="square-check">
+                <input type="checkbox" /><span class="check-content"
+                  >选项03</span
+                >
+              </div>
+            </li>
+            <li class="form-check-item">
+              <div class="square-check">
+                <input type="checkbox" /><span class="check-content"
+                  >选项04</span
+                >
+              </div>
+            </li>
+            <li class="form-check-item">
+              <div class="square-check">
+                <input type="checkbox" /><span class="check-content"
+                  >选项05</span
+                >
+              </div>
+            </li>
+            <li class="form-check-item">
+              <div class="square-check">
+                <input type="checkbox" /><span class="check-content"
+                  >选项06</span
+                >
+              </div>
+            </li>
+            <li class="form-check-item">
+              <div class="square-check">
+                <input type="checkbox" /><span class="check-content"
+                  >选项07</span
+                >
+              </div>
+            </li>
+            <li class="form-check-item">
+              <div class="square-check">
+                <input type="checkbox" /><span class="check-content"
+                  >选项08</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">是否配送</label>
+          <ul class="form-check">
+            <li class="form-check-item">
+              <div class="circle-check"><input type="checkbox" /> 是</div>
+            </li>
+            <li class="form-check-item">
+              <div class="circle-check"><input type="checkbox" /> 是</div>
+            </li>
+          </ul>
+        </div>
+        <div class="form-group" style="margin-top: 20px;">
+          <button class="btn btn-info">点击提交</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

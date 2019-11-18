@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 清空input 默认样式 */
+input {
+  /* 输入框没有边框 */
+  border: none;
+  /* 清空默认样式；输入框样式 按钮样式  选择款样式 */
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /* 获取焦点时的默认样式 */
+  outline: none;
+  -webkit-appearance: none;
+  -moz-outline: none;
+}
+/* 默认的form-group */
+.form-group {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-control {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+  width: 100%;
+}
+/* input 获取获取焦点 .form-control显示的样式 */
+/* 可以其他元素变为 表单元素  :focus 值针对有可以获取焦点的元素 */
+.form-control:focus {
+  outline: 1px solid #409eff;
+}
+.form-label {
+  display: inline-block;
+  font-weight: bolder;
+  padding-bottom: 5px;
+  padding: 5px 3px 5px 5px;
+}
+/* 
+基础样式： 权重最低的；随时可以附带；代替
+
+可选择样式：在基础样式基础上进行样式添加；通过权重级别高低来覆盖样式
+
+自当以：给用户足够空间 让用户通过；搭建不同结构，自己进行样式添加
+
+结构： 1：占多少份；2：如何布局
+*/
+@media screen and (min-width: 768px) {
+    .form-inline .form-group {
+      display: inline-block;
+      /* auto 自动 宽度由子元素撑起来  */
+      width: auto;
+    }
+    .form-inline .form-control {
+      display: inline-block;
+      width: auto;
+      padding: 6px 12px;
+    }
+
+    .form-horizontal {
+      text-align: center;
+    }
+    .form-horizontal .form-group::after {
+      content: "";
+      display: table;
+    }
+    .form-horizontal .form-label {
+      /* float: left; */
+      display: inline-block;
+      max-width: 100%;
+      min-width: 16.6666667%;
+      width: auto;
+      text-align: right;
+      padding: 6px 12px;
+    }
+    .form-horizontal .form-control {
+      /* float: left; */
+      display: inline-block;
+      margin-left: -5px;
+      min-width: 83.33333333%;
+      max-width: 100%;
+      width: auto;
+    }
+    .form-horizontal .form-check {
+      display: inline-block;
+      margin-left: -5px;
+      min-width: 83.33333333%;
+      max-width: 100%;
+      width: auto;
+      vertical-align: text-top;
+      text-align: left;
+    }
+    .form-horizontal .form-group {
+      width: 100%;
+    }
+    .form-check > .form-check-item {
+      display: inline-block;
+      margin-left: -4px;
+      /* float: left; */
+      width: 33%;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* 用户自定义 */
+  .form-inline .checkbox {
+    display: inline-block;
+    margin-right: 10px;
+  }

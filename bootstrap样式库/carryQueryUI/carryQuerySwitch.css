@@ -1,0 +1,57 @@
+/* 必须是Input为 checkbox class 添加 switch 才能实现以下效果哦 */
+input[type=checkbox].switch{
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    position: relative;
+    width: 2.8rem;
+    height: 1.52rem;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    border-radius: 0.7rem;
+
+}
+
+input[type=checkbox].switch::after{
+    content: "";
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px #999;
+    transition: left 0.1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input[type=checkbox].switch:checked{
+    background-color: #32ba58;
+}
+/* 
+1：默认为不被选中装填
+当input[type=checkbox] 被选中时候；伪元素显示下面样式  位置发生变化
+*/
+input[type=checkbox].switch:checked::after{
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    left: 50%;
+}
+/* 状态 */
+input[type=checkbox]:checked.switch.switch-info{
+    background-color: #409eff;
+}
+input[type=checkbox]:checked.switch.switch-danger{
+    background-color: rgb(255, 73, 73);
+}
+input[type=checkbox]:checked.switch.switch-primary{
+    background-color: #409eff;
+}
+input[type=checkbox].switch.switch-primary{
+    background-color:  rgb(255, 73, 73);
+}
+input[type=checkbox]:checked.switch.switch-warm{
+    background-color: hsl(51, 93%, 54%);
+}
